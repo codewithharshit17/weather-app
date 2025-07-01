@@ -1,49 +1,21 @@
-# Python Weather App (Mini Project)
+# 🌦️ Weather App (Mini Project)
 
-This is a simple Python-based weather application that uses the OpenWeatherMap API and the `requests` library to fetch current weather data for any city in the world.
-
----
-
-## 💡 Features
-
-- ✅ Takes input from the user (city name)
-- ✅ Fetches live weather info using OpenWeatherMap API
-- ✅ Shows:
-  - Temperature in Celsius
-  - Weather condition
-  - Humidity
-  - Wind speed
-- ✅ Handles invalid city names
-- ✅ Easy and beginner-friendly
+This is a simple Python CLI weather app that fetches live weather data using the OpenWeatherMap API.
 
 ---
 
-## 🛠️ Technologies Used
+## 🚀 Features
 
-- Python 3
-- `requests` library
-- OpenWeatherMap API
-
----
-
-## 🧪 Sample Output
-
-Enter city name: Delhi
-
-Weather in Delhi:
-Temperature: 34.7°C
-Condition : haze
-Humidity : 62%
-Wind Speed: 2.3 m/s
-
+- Fetch current weather of any city
+- Shows temperature, humidity, wind speed, and weather condition
+- Uses `.env` to protect API key
 
 ---
 
-## 🚀 How to Run the Project
+## 🔧 How to Use
 
-1. **Install Python 3**
-2. **Install the `requests` library**
-   ```bash
-   pip install requests
+1. Clone the repo
+2. Create a `.env` file like this:
 
-
+## 📸 Screenshot
+![Weather App Output](screenshot.png)
