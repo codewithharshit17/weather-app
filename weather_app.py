@@ -1,10 +1,13 @@
 import requests
+import os
+from dotenv import load_dotenv
 
-API_KEY = "a359ca8bd6156e7aedd87ed51c2f2c6a"  
+load_dotenv()  # Load variables from .env
+
+API_KEY = os.getenv("API_KEY")  # Get your API key from .env
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 city = input("Enter city name: ")
-
 url = f"{BASE_URL}?q={city}&appid={API_KEY}&units=metric"
 
 response = requests.get(url)
@@ -21,6 +24,5 @@ if response.status_code == 200:
     print(f"Condition : {description}")
     print(f"Humidity  : {humidity}%")
     print(f"Wind Speed: {wind} m/s")
-
 else:
     print("❌ City not found or API error.")
